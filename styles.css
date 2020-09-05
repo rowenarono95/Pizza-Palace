@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue";
+    background-image: url(/images/pizza-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    /* background-image: url(./images/pizza-bg3.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-custom {
+    background-color: #fff;
+}
+
+.navbar {
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+#about-us {
+    min-height: 300px;
+}
+
+.card {
+    border: none;
+}
+
+.card-footer {
+    background: none;
+}
+
+.divider {
+    border: solid red 3px;
+    width: 10%;
+}
+
+#delivery,
+#place-order,
+#show-now {
+    display: none;
+}
