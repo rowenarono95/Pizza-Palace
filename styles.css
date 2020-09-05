@@ -4,17 +4,17 @@ html {
 
 body {
     font-family: "Helvetica Neue";
-    background-image: url(/images/pizza-bg2.jpg);
+    background-color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
-.masthead {
+.header {
     height: 100vh;
     min-height: 500px;
-    /* background-image: url(./images/pizza-bg3.jpg); */
+    background-image: url(./images/pizza-bg2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
