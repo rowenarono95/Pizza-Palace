@@ -78,14 +78,13 @@
                         consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium,
                         totam
                         rem aperiam.</p>
-
                 </div>
             </div>
             <hr class="my-4 rgba-white-light">
         </div>
 
-        <div class="container-fluid">
-            <h2 id="shop">Shop</h2>
+        <div class="container-fluid" id="card">
+            <h2 class="pizza1">Shop</h2>
             <div class="card-deck">
                 <div class="card mb-4">
                     <div class="view overlay">
@@ -97,11 +96,10 @@
 
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's
-                            content.</p>
-                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                            content.</p> -->
                     </div>
                 </div>
 
@@ -113,12 +111,11 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h4 class="card-title">Periperi</h4>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's
-                            content.</p>
-                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                            content.</p> -->
                     </div>
                 </div>
                 <div class="card mb-4">
@@ -129,12 +126,11 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h4 class="card-title">Margarita</h4>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's
-                            content.</p>
-                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                            content.</p> -->
                     </div>
                 </div>
             </div>
@@ -149,12 +145,11 @@
                     </div>
 
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h4 class="card-title"> Chiken BBQ</h4>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's
-                            content.</p>
-                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                            content.</p> -->
                     </div>
 
                 </div>
@@ -167,12 +162,11 @@
                     </div>
 
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h4 class="card-title">Chiken Tikka</h4>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's
-                            content.</p>
-                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                            content.</p> -->
                     </div>
                 </div>
 
@@ -186,76 +180,172 @@
 
 
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h4 class="card-title">Mashroom</h4>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's
-                            content.</p>
-                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                            content.</p> -->
                     </div>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="container-fluid order" id="order">
+            <div class="order-overlay">
+                <div class="controls-top text-center" id="order-now">
+                    <h2>Order Here</h2>
+                </div>
+                <h2>Order your pizza and we'll deliver it ASAP!</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form action="">
+                            <label for="select">Your choice please</label>
+                            <select class="browser-default custom-select custom-select-md mb-3 name">
+                                <option selected value="0">Your choice please!</option>
+                                <option value="veggie pizza">Veggie Pizza</option>
+                                <option value="margaritta pizza">Margaritta Pizza</option>
+                                <option value="chicken pizza">Chicken Pizza</option>
+                                <option value="rainbow pizza">Rainbow Pizza</option>
+                            </select>
+                            <label for="select">Your size please</label>
+                            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                                <option selected value="0">Pick your size</option>
+                                <option value="large">Large -- sh. 1000</option>
+                                <option value="medium">Medium -- sh. 700</option>
+                                <option value="small">Small -- sh. 450</option>
+                            </select>
+                            <label for="crust">Please pick your favourite crust!</label>
+                            <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                                <option selected value="0">Your preffered crust</option>
+                                <option value="crispy">Crispy --sh. 500</option>
+                                <option value="stuffed">Stuffed --sh. 350</option>
+                                <option value="glutten-free">Glutten-free --sh.450 </option>
+                            </select>
+                            <label for="toppings">Select your toppings at sh. 30 each</label><br>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="chicken" value="chicken"
+                                    name="toppings">
+                                <label class="custom-control-label" for="chicken">Chicken</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="peperoni" value="peperoni"
+                                    name="toppings">
+                                <label class="custom-control-label" for="peperoni">Peperoni</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="lettuce" value="lettuce"
+                                    name="toppings">
+                                <label class="custom-control-label" for="lettuce">Lettuce</label>
+                            </div>
+                            <br><br>
+                            <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-8">
+                    <div id="information">
+                        <p>Your order will be processed and delivered within 2 hours,<br> make sure you have the total
+                            amount for order during delivery.</p>
+                        <p id="thank you">Thank you for choosing Pizza Hub!</p>
+                    </div>
+                    <div class="choice">
+                        <h2>Your order is:</h2>
+                        <div id="your-orders">
+                            <table class="table table-sm pizzatable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Toppings</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ordersmade">
+                                    <tr>
+                                        <td id="pizzaname"></td>
+                                        <td id="pizzasize"></td>
+                                        <td id="pizzacrust"></td>
+                                        <td id="pizzatoppings"></td>
+                                        <td id="totals"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p id="pizzatotal"></p>
+                            <p id="totalbill"></p>
+                            <p id="addedprice">Delivery fee at sh. 200</p>
+                            <p id="finallmessage"></p>
+                        </div>
+                        <button class="btn btn-orange addPizza">Add Pizza</button><br>
+                        <button class="btn btn-orange" id="checkout">Checkout</button><br>
+                        <button class="btn btn-orange deliver">Doorstep delivery?</button>
+                    </div>
+                    <div class="delivery">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                                <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                                <input type="text" id="location" class="form-control mb-3" placeholder="Location">
+                                <button class="btn btn-orange" id="final-order">Place Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-            <footer class="page-footer font-small cyan darken-3">
+            </div>
 
-                <div class="container">
+            <div>
+                <h2 class="pizza1">Contact</h2>
+                <footer class="page-footer font-small cyan darken-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <div class="mb-5 flex-center">
+                                    <a class="fb-ic">
+                                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
 
+                                    <a class="tw-ic">
+                                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
 
-                    <div class="row">
+                                    <a class="gplus-ic">
+                                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
 
+                                    <a class="li-ic">
+                                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
 
-                        <div class="col-md-12 py-5">
-                            <div class="mb-5 flex-center">
-
-                                <a class="fb-ic">
-                                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-
-                                <a class="tw-ic">
-                                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-
-                                <a class="gplus-ic">
-                                    <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-
-                                <a class="li-ic">
-                                    <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-
-                                <a class="ins-ic">
-                                    <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-
+                                    <a class="ins-ic">
+                                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a href="https://mdbootstrap.com/"> Pizza Palace</a>
                     </div>
 
 
-                </div>
+                </footer>
 
-                <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a href="https://mdbootstrap.com/"> Rowena Rono</a>
-                </div>
-
-
-            </footer>
-
-        </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
-        <script src="script.js"></script>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous">
+            </script>
+            <script src="script.js"></script>
 </body>
 
 </html>
