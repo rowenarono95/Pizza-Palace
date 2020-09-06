@@ -55,3 +55,10 @@ body {
 #show-now {
     display: none;
 }
+
+#about-us {
+    background-image: url(./images/jumbo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
