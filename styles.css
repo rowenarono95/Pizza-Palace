@@ -11,10 +11,10 @@ body {
 
 }
 
-.header {
+.home {
     height: 100vh;
     min-height: 500px;
-    background-image: url(./images/nav.jpeg);
+    background-image: url(./images/nav2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,4 +71,18 @@ body {
     font-family: fantasy;
     color: chocolate;
 
+}
+
+#order {
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+#text-center {
+    background-image: url(./images/footer.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
