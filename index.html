@@ -21,9 +21,9 @@
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow fixed-top text-primary">
             <div class="container">
-                <a class="navbar-brand" href="#">Palace</a>
+                <a class="navbar-brand text-primary " href="#">Palace</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,19 +31,19 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link text-primary" href="#">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#about-us">About Us</a>
+                            <a class="nav-link text-primary" href="#about-us">About Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#shop">Shop</a>
+                            <a class="nav-link text-primary" href="#shop">Shop</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#order">Order</a>
+                            <a class="nav-link text-primary" href="#order">Order</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link text-primary" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -155,64 +155,67 @@
                 </div>
             </div>
         </div>
-        <form class="p-3 mt-3 col-md-6 mx-auto" id="text-center">
-            <div class="form-group">
-                <label id="pizza1" for="exampleFormControlSelect1">Pizza Flavor</label>
-                <select class="form-control" id="flavor">
-                    <option>Select</option>
-                    <option label="Hawaaian" value="800">Hawaaian Pizza</option>
-                    <option label="Periperi" value="900">Periperi Pizza</option>
-                    <option label="Margerita" value="1200">Margerita Pizza</option>
-                    <option label="Bbq Chiken" value="600">Bbq Chicken Pizza</option>
-                    <option label="Chiken Tikka" value="650"> Chicken Tikka</option>
-                    <option label="Veggie Vegan" value="650">Veggie Vegan Pizza</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label id="pizza1" for="exampleFormControlSelect1">Pizza Size</label>
-                <select class="form-control" id="size">
-                    <option>Select</option>
-                    <option label="Regular" value="500">Regular</option>
-                    <option label="Medium" value="700">Medium</option>
-                    <option label="Large" value="900">Large</option>
-                    <option label="Mega" value="1200">Mega</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label id="pizza1" for="exampleFormControlSelect1">Pizza Crust</label>
-                <select class="form-control" id="crust">
-                    <option>Select</option>
-                    <option label="Thin Crust" value="150">Thin Crust</option>
-                    <option label="Thick Crust" value="200">Thick Crust</option>
-                    <option label="Deep Crust" value="380">Deep Crust</option>
-                    <option label="Cheese Filled Crust" value="500">Cheese Filled Crust</option>
-                    <option label="Stuffed Crust" value="350">Stuffed Crust</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label id="pizza1" for="exampleFormControlSelect1">Pizza Topping</label>
-                <select class="form-control" id="topping">
-                    <option label="Topping" value="">Select</option>
-                    <option label="Pepperoni" value="100">Pepperoni</option>
-                    <option label="Mushrooms" value="300">Mushrooms</option>
-                    <option label="Onions" value="120">Onions</option>
-                    <option label="Sausage" value="125">Sausage</option>
-                    <option label="Green Peppers" value="80">Green Peppers</option>
-                </select>
-            </div>
-            <div class="col-sm-9">
-                <!-- [1, 1] -->
-                <fieldset class="form-group">
-                    <label id="pizza1">Number of Pizza</label>
-                    <textarea id="quantity" class="form-control"
-                        placeholder="Please input the number of pizza you want." ng-model="myTextarea" required
-                        data-error=""></textarea>
-                    <div class="help-block with-errors">
-                    </div>
-                </fieldset>
-            </div>
-            <button id="button" type="submit" class="btn btn-primary">Order</button>
-        </form>
+        <div class="conntainer-fluid">
+            <h4 id="order">Order Your Pizza Here</h4>
+            <form class="p-3 mt-3 col-md-6 mx-auto" id="text-center">
+                <div class="form-group">
+                    <label id="pizza1" for="exampleFormControlSelect1">Pizza Flavor</label>
+                    <select class="form-control" id="flavor">
+                        <option>Select</option>
+                        <option label="Hawaaian" value="800">Hawaaian Pizza</option>
+                        <option label="Periperi" value="900">Periperi Pizza</option>
+                        <option label="Margerita" value="1200">Margerita Pizza</option>
+                        <option label="Bbq Chiken" value="600">Bbq Chicken Pizza</option>
+                        <option label="Chiken Tikka" value="650"> Chicken Tikka</option>
+                        <option label="Veggie Vegan" value="650">Veggie Vegan Pizza</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="pizza1" for="exampleFormControlSelect1">Pizza Size</label>
+                    <select class="form-control" id="size">
+                        <option>Select</option>
+                        <option label="Regular" value="500">Regular</option>
+                        <option label="Medium" value="700">Medium</option>
+                        <option label="Large" value="900">Large</option>
+                        <option label="Mega" value="1200">Mega</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="pizza1" for="exampleFormControlSelect1">Pizza Crust</label>
+                    <select class="form-control" id="crust">
+                        <option>Select</option>
+                        <option label="Thin Crust" value="150">Thin Crust</option>
+                        <option label="Thick Crust" value="200">Thick Crust</option>
+                        <option label="Deep Crust" value="380">Deep Crust</option>
+                        <option label="Cheese Filled Crust" value="500">Cheese Filled Crust</option>
+                        <option label="Stuffed Crust" value="350">Stuffed Crust</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="pizza1" for="exampleFormControlSelect1">Pizza Topping</label>
+                    <select class="form-control" id="topping">
+                        <option label="Topping" value="">Select</option>
+                        <option label="Pepperoni" value="100">Pepperoni</option>
+                        <option label="Mushrooms" value="300">Mushrooms</option>
+                        <option label="Onions" value="120">Onions</option>
+                        <option label="Sausage" value="125">Sausage</option>
+                        <option label="Green Peppers" value="80">Green Peppers</option>
+                    </select>
+                </div>
+                <div class="col-sm-9">
+                    <!-- [1, 1] -->
+                    <fieldset class="form-group">
+                        <label id="pizza1">Number of Pizza</label>
+                        <textarea id="quantity" class="form-control"
+                            placeholder="Please input the number of pizza you want." ng-model="myTextarea" required
+                            data-error=""></textarea>
+                        <div class="help-block with-errors">
+                        </div>
+                    </fieldset>
+                </div>
+                <button id="button" type="submit" class="btn btn-primary">Order</button>
+            </form>
+        </div>
         <h2 class="pizza1">Contact</h2>
         <footer class="page-footer font-small cyan darken-3" id="footer">
             <div class="container">

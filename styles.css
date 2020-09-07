@@ -73,27 +73,16 @@ body {
 
 }
 
-
-/* .total-amount,
-.delivery-cost {
-    font-weight: bold;
-    font-size: 1.6em;
+#order {
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+    font-size: 4rem;
 }
 
-.hidden {
-    display: none;
+#text-center {
+    background-image: url(./images/footer.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-.checkout-options,
-.location {
-    z-index: 3;
-    border-radius: 15px;
-    padding: 20px;
-    width: 40%;
-    height: 60vh;
-    background: aqua;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
