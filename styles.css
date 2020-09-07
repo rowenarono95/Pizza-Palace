@@ -11,10 +11,10 @@ body {
 
 }
 
-.header {
+.home {
     height: 100vh;
     min-height: 500px;
-    background-image: url(./images/nav.jpeg);
+    background-image: url(./images/nav2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,3 +72,28 @@ body {
     color: chocolate;
 
 }
+
+
+/* .total-amount,
+.delivery-cost {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkout-options,
+.location {
+    z-index: 3;
+    border-radius: 15px;
+    padding: 20px;
+    width: 40%;
+    height: 60vh;
+    background: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
