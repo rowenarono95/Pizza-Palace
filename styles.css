@@ -21,13 +21,10 @@ body {
     background-attachment: fixed;
 }
 
-.bg-custom {
-    background-color: #fff;
-}
-
 .navbar {
     -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
+    font-size: 1.5rem;
 }
 
 .bg-transparent {
