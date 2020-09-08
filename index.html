@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Palace</title>
-    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- <link href="bootstrap.css" rel="stylesheet" type="text/css"> -->
     <link href="styles.css" rel="stylesheet" type="text/css">
     <!-- MD bootstrap Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
@@ -185,67 +185,111 @@
                 </div>
             </div>
         </div>
-        <div class="conntainer-fluid">
+        <div class="container-fluid">
             <h4 id="order">Order Your Pizza Here</h4>
-            <form class="p-3 mt-3 col-md-6 mx-auto" id="text-center">
+            <form class="p-3 mt-3 col-md-6 mx-auto cyan darken-3" id="order-form">
                 <div class="form-group">
                     <label id="pizza1" for="exampleFormControlSelect1">Pizza Flavor</label>
                     <select class="form-control" id="flavor" required>
                         <option>Select</option>
-                        <option label="Hawaaian---ksh.800" value="800">Hawaaian Pizza</option>
-                        <option label="Periperi---ksh.900" value="900">Periperi Pizza</option>
-                        <option label="Margerita---ksh.1200" value="1200">Margerita Pizza</option>
-                        <option label="Bbq Chiken---ksh.600" value="600">Bbq Chicken Pizza</option>
-                        <option label="Chiken Tikka---ksh.650" value="650"> Chicken Tikka</option>
-                        <option label="Veggie Vegan---ksh.650" value="650">Veggie Vegan Pizza</option>
+                        <option label="Hawaaian">Hawaaian Pizza</option>
+                        <option label="Periperi">Periperi Pizza</option>
+                        <option label="Margerita">Margerita Pizza</option>
+                        <option label="Bbq Chicken">Bbq Chicken Pizza</option>
+                        <option label="Chicken Tikka"> Chicken Tikka</option>
+                        <option label="Veggie Vegan">Veggie Vegan Pizza</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label id="pizza1" for="exampleFormControlSelect1">Pizza Size</label>
                     <select class="form-control" id="size" required>
                         <option>Select</option>
-                        <option label="Regular---ksh.500" value="500">Regular</option>
-                        <option label="Medium---ksh.700" value="700">Medium</option>
-                        <option label="Large---ksh.900" value="900">Large</option>
-                        <option label="Mega---ksh.1200" value="1200">Mega</option>
+                        <option label="Regular">Regular</option>
+                        <option label="Medium">Medium</option>
+                        <option label="Large">Large</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label id="pizza1" for="exampleFormControlSelect1">Pizza Crust</label>
                     <select class="form-control" id="crust" required>
                         <option>Select</option>
-                        <option label="Thin Crust---ksh.159" value="150">Thin Crust</option>
-                        <option label="Thick Crust---ksh.200" value="200">Thick Crust</option>
-                        <option label="Deep Crust---ksh.380" value="380">Deep Crust</option>
-                        <option label="Cheese Filled Crust---ksh.500" value="500">Cheese Filled Crust</option>
-                        <option label="Stuffed Crust---ksh.350" value="350">Stuffed Crust</option>
+                        <option label="Thin Crust">Thin Crust</option>
+                        <option label="Thick Crust">Thick Crust</option>
+                        <option label="Deep Crust">Deep Crust</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label id="pizza1" for="exampleFormControlSelect1">Pizza Topping</label>
                     <select class="form-control" id="topping" required>
                         <option label="Topping" value="">Select</option>
-                        <option label="Pepperoni---ksh.100" value="100">Pepperoni</option>
-                        <option label="Mushrooms---ksh.300" value="300">Mushrooms</option>
-                        <option label="Onions---ksh.120" value="120">Onions</option>
-                        <option label="Sausage---ksh.125" value="125">Sausage</option>
-                        <option label="Green Peppers---ksh.80" value="80">Green Peppers</option>
+                        <option label="Pepperoni">Pepperoni</option>
+                        <option label="Mushrooms">Mushrooms</option>
+                        <option label="Onions">Onions</option>
+                        <option label="Sausage">Sausage</option>
                     </select>
                 </div>
-                <div class="col-sm-9">
-                    <!-- [1, 1] -->
-                    <fieldset class="form-group">
-                        <label id="pizza1">Number of Pizza</label>
-                        <textarea id="quantity" class="form-control"
-                            placeholder="Please input the number of pizza you want." ng-model="myTextarea" required
-                            data-error=""></textarea>
-                        <div class="help-block with-errors">
-                        </div>
-                    </fieldset>
-                </div>
+                <h5>Please fill the form again to re-order</h5>
                 <button id="button" type="submit" class="btn btn-primary">Order</button>
             </form>
+        </div><br>
+        <div class="col-md-8" id="orders-div">
+            <h3>Your Orders</h3>
+            <table class="table table-striped table-cyan darken-3">
+                <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Topping</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-summary"></tbody>
+            </table>
+
+            <p class="delivery-cost hidden">
+                Delivery: Ksh. <span id="delivery-amount"></span>
+            </p>
+            <p class="sum hidden">
+                Total: Ksh. <span id="sum"></span>
+            </p>
+            <br /><br />
+            <button class="btn btn-primary hidden" id="checkout">Checkout</button>
         </div>
+
+        <div class="checkout-options hidden">
+            <h3>Checkout Form</h3>
+            <form id="checkout-form" class="cyan accent-1">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Delivery Option</label>
+                    <select class="form-control" id="delivery-option" required>
+                        <option value="">...</option>
+                        <option value="deliver">Deliver</option>
+                        <option value="collect">Collect</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="location hidden">
+            <form id="location-form">
+                <h3>Enter Location</h3>
+                <div class="form-group">
+                    <label>Estate</label>
+                    <input type="text" class="form-control" id="estate" placeholder="Enter Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">House Number</label>
+                    <input type="text" class="form-control" id="house-number" placeholder="Enter Your Name" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
         <h2 class="pizza1">Contact</h2>
         <footer class="page-footer font-small cyan darken-3" id="footer">
             <div class="container">
