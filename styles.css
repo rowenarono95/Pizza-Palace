@@ -51,11 +51,7 @@ body {
     width: 10%;
 }
 
-#delivery,
-#place-order,
-#show-now {
-    display: none;
-}
+
 
 #about-us {
     background-image: url(./images/jumbo.jpeg);
