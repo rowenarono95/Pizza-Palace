@@ -32,9 +32,9 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 30px;
     font-family: 'Amarante';
-    color: rgb(125, 125, 221);
+    color: red;
     font-weight: bolder;
 }
 
@@ -89,7 +89,7 @@ h1 {
 }
 
 #text-center {
-    background-color: cyan;
+    background-color:#0097a7;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
